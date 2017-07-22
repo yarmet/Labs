@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns2:itemRequest xmlns:ns2="http://localhost:8080/webservices">
+    <items>
+        <item time="2017-07-20T17:41:36.833+03:00" value="4.6" deviceId="191" parameterId="temperature"/>
+        <item time="2017-07-20T17:41:36.833+03:00" value="1.4" deviceId="195" parameterId="humidity"/>
+    </items>
+</ns2:itemRequest>

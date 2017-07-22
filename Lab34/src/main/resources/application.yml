@@ -1,0 +1,20 @@
+
+ftp:
+  url: localhost/files
+  incorrect_files_url: localhost/error
+  username: ruslan
+  password: 123
+
+queue:
+    path : tcp://localhost:61616
+    name : testTaskQueue
+
+
+webservice.path : http://localhost:8080/ws
+
+server.port: 8082
+
+
+restUrl:
+      sensors: http://localhost:8081/getSensors
+      parameters: http://localhost:8081/getParameters

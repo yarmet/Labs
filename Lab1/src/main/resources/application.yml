@@ -1,0 +1,9 @@
+spring.jpa.hibernate.ddl-auto: update
+spring.database.driverClassName: org.postgresql.Driver
+
+spring.datasource:
+          url: jdbc:postgresql://localhost:5432/postgres
+          username: postgres
+          password: 123
+
+server.port: 8081

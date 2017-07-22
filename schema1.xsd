@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<xs:schema version="1.0" targetNamespace="http://localhost:8080/webservices" xmlns:tns="http://localhost:8080/webservices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+  <xs:element name="item">
+    <xs:complexType>
+      <xs:sequence/>
+      <xs:attribute name="time" type="xs:dateTime" use="required"/>
+      <xs:attribute name="value" type="xs:double" use="required"/>
+      <xs:attribute name="deviceId" type="xs:long" use="required"/>
+      <xs:attribute name="parameterId" type="xs:string" use="required"/>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="itemRequest">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="items" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="item" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+
+  <xs:element name="itemResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="code" type="xs:int"/>
+        <xs:element name="items" minOccurs="0">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="item" minOccurs="0" maxOccurs="unbounded"/>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
+
